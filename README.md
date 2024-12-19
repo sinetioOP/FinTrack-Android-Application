@@ -1,0 +1,1 @@
+This application is especially for part-timer to keep track of finance and work schedule.
