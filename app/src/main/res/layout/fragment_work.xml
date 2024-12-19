@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".WorkFragment">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycler_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/fab_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="24dp"
+        android:src="@android:drawable/ic_input_add"
+        android:tint="@color/white"
+        app:fabCustomSize="64dp"
+        app:fabSize="auto"
+        app:maxImageSize="36dp"
+        android:backgroundTint="@color/primary"
+        android:elevation="5dp"
+        />
+
+<!--    <ImageView-->
+<!--        android:layout_width="54dp"-->
+<!--        android:layout_height="54dp"-->
+<!--        android:background="@drawable/fab_background"-->
+<!--        android:backgroundTint="@color/primary"-->
+<!--        android:src="@drawable/add"-->
+<!--        tools:layout_editor_absoluteX="320dp"-->
+<!--        tools:layout_editor_absoluteY="593dp" />-->
+
+</androidx.constraintlayout.widget.ConstraintLayout>

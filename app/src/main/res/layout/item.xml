@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="16dp"
+    android:id="@+id/item"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="5dp"
+    app:contentPadding="12dp"
+    app:cardBackgroundColor="@color/white"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/place_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/place"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:contentDescription="This is place icon"
+            app:tint="@color/primary"/>
+
+        <TextView
+            android:id="@+id/hotel_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hotel Name"
+            app:layout_constraintStart_toEndOf="@id/place_icon"
+            app:layout_constraintTop_toTopOf="parent"
+            android:layout_marginStart="12dp"
+            android:textSize="16sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/date_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Date: "
+            android:textSize="12sp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@id/place_icon"
+            app:layout_constraintTop_toBottomOf="@+id/hotel_name"/>
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textSize="12sp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@id/date_text"
+            app:layout_constraintTop_toBottomOf="@+id/hotel_name"/>
+
+        <TextView
+            android:id="@+id/time_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Time: "
+            android:textSize="12sp"
+            android:layout_marginStart="12dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@id/place_icon"
+            app:layout_constraintTop_toBottomOf="@+id/date_text"/>
+
+        <TextView
+            android:id="@+id/starting_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textSize="12sp"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@id/time_text"
+            app:layout_constraintTop_toBottomOf="@+id/date_text"/>
+
+        <TextView
+            android:id="@+id/middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="-"
+            android:textSize="12sp"
+            android:layout_marginStart="3dp"
+            android:layout_marginEnd="3dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@id/starting_time"
+            app:layout_constraintTop_toBottomOf="@+id/date"/>
+
+        <TextView
+            android:id="@+id/ending_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00:00"
+            android:textSize="12sp"
+            android:layout_marginStart="6dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@id/middle"
+            app:layout_constraintTop_toBottomOf="@+id/date"/>
+
+        <TextView
+            android:id="@+id/rate_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Rate: $ "
+            android:textSize="12sp"
+            android:layout_marginStart="12dp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@id/place_icon"
+            app:layout_constraintTop_toBottomOf="@+id/time_text"/>
+
+        <TextView
+            android:id="@+id/rate"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textSize="12sp"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toEndOf="@id/rate_text"
+            app:layout_constraintTop_toBottomOf="@+id/starting_time"/>
+
+        <TextView
+            android:id="@+id/estimate_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="est  $"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/estimate_amount"
+            android:clickable="true" />
+
+        <TextView
+            android:id="@+id/estimate_amount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="00"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="12dp"
+            android:clickable="true" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

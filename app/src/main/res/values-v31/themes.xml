@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Login" parent="Base.Theme.Login">
+        <item name="android:statusBarColor">@color/status_bar</item>
+        <item name="android:navigationBarColor">@color/black</item>
+        <item name="android:windowSplashScreenAnimatedIcon">@color/white</item>
+    </style>
+</resources>

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "340814191788",
+    "project_id": "fintrack-cca93",
+    "storage_bucket": "fintrack-cca93.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:340814191788:android:41416a96aae91e4757d309",
+        "android_client_info": {
+          "package_name": "sp.com.fintrack_test"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXBJgaceyC_Dz-XURS8DQif4Kxh57K4jE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:340814191788:android:9f7dc4d3e106e53357d309",
+        "android_client_info": {
+          "package_name": "sp.com.login_signup"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCXBJgaceyC_Dz-XURS8DQif4Kxh57K4jE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
